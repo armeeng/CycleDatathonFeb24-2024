@@ -1,0 +1,396 @@
+<!DOCTYPE html>
+<html>
+<head>
+    
+    <meta http-equiv="content-type" content="text/html; charset=UTF-8" />
+    
+        <script>
+            L_NO_TOUCH = false;
+            L_DISABLE_3D = false;
+        </script>
+    
+    <style>html, body {width: 100%;height: 100%;margin: 0;padding: 0;}</style>
+    <style>#map {position:absolute;top:0;bottom:0;right:0;left:0;}</style>
+    <script src="https://cdn.jsdelivr.net/npm/leaflet@1.9.3/dist/leaflet.js"></script>
+    <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.js"></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/leaflet@1.9.3/dist/leaflet.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css"/>
+    <link rel="stylesheet" href="https://netdna.bootstrapcdn.com/bootstrap/3.0.0/css/bootstrap.min.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@6.2.0/css/all.min.css"/>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/python-visualization/folium/folium/templates/leaflet.awesome.rotate.min.css"/>
+    
+            <meta name="viewport" content="width=device-width,
+                initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+            <style>
+                #map_fa57de34c5c48af4d9f6f910cc380d68 {
+                    position: relative;
+                    width: 100.0%;
+                    height: 100.0%;
+                    left: 0.0%;
+                    top: 0.0%;
+                }
+                .leaflet-container { font-size: 1rem; }
+            </style>
+        
+</head>
+<body>
+    
+    
+            <div class="folium-map" id="map_fa57de34c5c48af4d9f6f910cc380d68" ></div>
+        
+</body>
+<script>
+    
+    
+            var map_fa57de34c5c48af4d9f6f910cc380d68 = L.map(
+                "map_fa57de34c5c48af4d9f6f910cc380d68",
+                {
+                    center: [41.8781, -87.6298],
+                    crs: L.CRS.EPSG3857,
+                    zoom: 12,
+                    zoomControl: true,
+                    preferCanvas: false,
+                }
+            );
+
+            
+
+        
+    
+            var tile_layer_099281f3b25c9d969f5890e72f497aa4 = L.tileLayer(
+                "https://tile.openstreetmap.org/{z}/{x}/{y}.png",
+                {"attribution": "\u0026copy; \u003ca href=\"https://www.openstreetmap.org/copyright\"\u003eOpenStreetMap\u003c/a\u003e contributors", "detectRetina": false, "maxNativeZoom": 19, "maxZoom": 19, "minZoom": 0, "noWrap": false, "opacity": 1, "subdomains": "abc", "tms": false}
+            );
+        
+    
+            tile_layer_099281f3b25c9d969f5890e72f497aa4.addTo(map_fa57de34c5c48af4d9f6f910cc380d68);
+        
+    
+            var marker_f62f742c3be8b1cbd52256af101fd4a2 = L.marker(
+                [41.8781, -87.6298],
+                {}
+            ).addTo(map_fa57de34c5c48af4d9f6f910cc380d68);
+        
+    
+            var icon_88aace8940e34d7601f44c6137e34f89 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "blue", "prefix": "glyphicon"}
+            );
+            marker_f62f742c3be8b1cbd52256af101fd4a2.setIcon(icon_88aace8940e34d7601f44c6137e34f89);
+        
+    
+        var popup_63f09da1c881eeb48733ecf0ad44c161 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_a7d9f06b5dfc16c7c8e799fd94a9bed5 = $(`<div id="html_a7d9f06b5dfc16c7c8e799fd94a9bed5" style="width: 100.0%; height: 100.0%;">February: University Ave & 57th St</div>`)[0];
+                popup_63f09da1c881eeb48733ecf0ad44c161.setContent(html_a7d9f06b5dfc16c7c8e799fd94a9bed5);
+            
+        
+
+        marker_f62f742c3be8b1cbd52256af101fd4a2.bindPopup(popup_63f09da1c881eeb48733ecf0ad44c161)
+        ;
+
+        
+    
+    
+            var marker_442cff9c7f2b92080387e2edee962832 = L.marker(
+                [41.8781, -87.6298],
+                {}
+            ).addTo(map_fa57de34c5c48af4d9f6f910cc380d68);
+        
+    
+            var icon_1e6d6ee68c5efcde68c1aa477b29ba3a = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "blue", "prefix": "glyphicon"}
+            );
+            marker_442cff9c7f2b92080387e2edee962832.setIcon(icon_1e6d6ee68c5efcde68c1aa477b29ba3a);
+        
+    
+        var popup_c046429f9db7ab5a1a0029616cbbf03b = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_bf556d63588892a1f19ac74076e73224 = $(`<div id="html_bf556d63588892a1f19ac74076e73224" style="width: 100.0%; height: 100.0%;">January: University Ave & 57th St</div>`)[0];
+                popup_c046429f9db7ab5a1a0029616cbbf03b.setContent(html_bf556d63588892a1f19ac74076e73224);
+            
+        
+
+        marker_442cff9c7f2b92080387e2edee962832.bindPopup(popup_c046429f9db7ab5a1a0029616cbbf03b)
+        ;
+
+        
+    
+    
+            var marker_b135032fb44899530ef2561e13b8bd57 = L.marker(
+                [41.8781, -87.6298],
+                {}
+            ).addTo(map_fa57de34c5c48af4d9f6f910cc380d68);
+        
+    
+            var icon_8507e4efe3aae0ecd91cf3cf1ff7d60c = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "blue", "prefix": "glyphicon"}
+            );
+            marker_b135032fb44899530ef2561e13b8bd57.setIcon(icon_8507e4efe3aae0ecd91cf3cf1ff7d60c);
+        
+    
+        var popup_2d2f69dbcb135235efc01126f1930416 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_0200df31d308663ad1e7f5d9746c7f48 = $(`<div id="html_0200df31d308663ad1e7f5d9746c7f48" style="width: 100.0%; height: 100.0%;">June: Streeter Dr & Grand Ave</div>`)[0];
+                popup_2d2f69dbcb135235efc01126f1930416.setContent(html_0200df31d308663ad1e7f5d9746c7f48);
+            
+        
+
+        marker_b135032fb44899530ef2561e13b8bd57.bindPopup(popup_2d2f69dbcb135235efc01126f1930416)
+        ;
+
+        
+    
+    
+            var marker_d0655ef90d0f224d43a7dadbd4020bfe = L.marker(
+                [41.8781, -87.6298],
+                {}
+            ).addTo(map_fa57de34c5c48af4d9f6f910cc380d68);
+        
+    
+            var icon_e2ed80676a32bc213d4dbe4e0b074603 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "blue", "prefix": "glyphicon"}
+            );
+            marker_d0655ef90d0f224d43a7dadbd4020bfe.setIcon(icon_e2ed80676a32bc213d4dbe4e0b074603);
+        
+    
+        var popup_fa9657c66db64dfa438d4905725e32f6 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_5181fd00e8fb8ef392afd68074762a9e = $(`<div id="html_5181fd00e8fb8ef392afd68074762a9e" style="width: 100.0%; height: 100.0%;">April: Streeter Dr & Grand Ave</div>`)[0];
+                popup_fa9657c66db64dfa438d4905725e32f6.setContent(html_5181fd00e8fb8ef392afd68074762a9e);
+            
+        
+
+        marker_d0655ef90d0f224d43a7dadbd4020bfe.bindPopup(popup_fa9657c66db64dfa438d4905725e32f6)
+        ;
+
+        
+    
+    
+            var marker_ae2e3e0f29ae787444eed7ec4411ec05 = L.marker(
+                [41.8781, -87.6298],
+                {}
+            ).addTo(map_fa57de34c5c48af4d9f6f910cc380d68);
+        
+    
+            var icon_6522c63b4911ac529f73188bf474bea9 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "blue", "prefix": "glyphicon"}
+            );
+            marker_ae2e3e0f29ae787444eed7ec4411ec05.setIcon(icon_6522c63b4911ac529f73188bf474bea9);
+        
+    
+        var popup_4133fd8c08e920483d8eca4ab408d0ff = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_9ab658e3c2aa579d2808ab6f06cc07c5 = $(`<div id="html_9ab658e3c2aa579d2808ab6f06cc07c5" style="width: 100.0%; height: 100.0%;">July: Streeter Dr & Grand Ave</div>`)[0];
+                popup_4133fd8c08e920483d8eca4ab408d0ff.setContent(html_9ab658e3c2aa579d2808ab6f06cc07c5);
+            
+        
+
+        marker_ae2e3e0f29ae787444eed7ec4411ec05.bindPopup(popup_4133fd8c08e920483d8eca4ab408d0ff)
+        ;
+
+        
+    
+    
+            var marker_1909cb374d6fee484ca58ac7e02d3534 = L.marker(
+                [41.8781, -87.6298],
+                {}
+            ).addTo(map_fa57de34c5c48af4d9f6f910cc380d68);
+        
+    
+            var icon_5e9d8d05ccd44d247fb8375895fbebfb = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "blue", "prefix": "glyphicon"}
+            );
+            marker_1909cb374d6fee484ca58ac7e02d3534.setIcon(icon_5e9d8d05ccd44d247fb8375895fbebfb);
+        
+    
+        var popup_16d5a60cd17c6ca4e633373022315361 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_7ac6a30e8d2f01fba63327d2a4c8c444 = $(`<div id="html_7ac6a30e8d2f01fba63327d2a4c8c444" style="width: 100.0%; height: 100.0%;">March: Clinton St & Washington Blvd</div>`)[0];
+                popup_16d5a60cd17c6ca4e633373022315361.setContent(html_7ac6a30e8d2f01fba63327d2a4c8c444);
+            
+        
+
+        marker_1909cb374d6fee484ca58ac7e02d3534.bindPopup(popup_16d5a60cd17c6ca4e633373022315361)
+        ;
+
+        
+    
+    
+            var marker_9c63307369f6f1f39ae14631c0361fd1 = L.marker(
+                [41.8781, -87.6298],
+                {}
+            ).addTo(map_fa57de34c5c48af4d9f6f910cc380d68);
+        
+    
+            var icon_b5f98517b53b3cb880a253c5f0001a98 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "blue", "prefix": "glyphicon"}
+            );
+            marker_9c63307369f6f1f39ae14631c0361fd1.setIcon(icon_b5f98517b53b3cb880a253c5f0001a98);
+        
+    
+        var popup_a974ffd8035b6a82f2e1096fa8ed1863 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_42d61f87d75e10889b0cabdeabac6c80 = $(`<div id="html_42d61f87d75e10889b0cabdeabac6c80" style="width: 100.0%; height: 100.0%;">November: Ellis Ave & 60th St</div>`)[0];
+                popup_a974ffd8035b6a82f2e1096fa8ed1863.setContent(html_42d61f87d75e10889b0cabdeabac6c80);
+            
+        
+
+        marker_9c63307369f6f1f39ae14631c0361fd1.bindPopup(popup_a974ffd8035b6a82f2e1096fa8ed1863)
+        ;
+
+        
+    
+    
+            var marker_490eae084c4060a3e0da23beaa4f88c3 = L.marker(
+                [41.8781, -87.6298],
+                {}
+            ).addTo(map_fa57de34c5c48af4d9f6f910cc380d68);
+        
+    
+            var icon_76b402d2a492400afcd319d40dddfdcb = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "blue", "prefix": "glyphicon"}
+            );
+            marker_490eae084c4060a3e0da23beaa4f88c3.setIcon(icon_76b402d2a492400afcd319d40dddfdcb);
+        
+    
+        var popup_85d579cb0048bf157d869a98811f41cb = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_32480c0b9ba238310f16d702f4185f43 = $(`<div id="html_32480c0b9ba238310f16d702f4185f43" style="width: 100.0%; height: 100.0%;">August: Streeter Dr & Grand Ave</div>`)[0];
+                popup_85d579cb0048bf157d869a98811f41cb.setContent(html_32480c0b9ba238310f16d702f4185f43);
+            
+        
+
+        marker_490eae084c4060a3e0da23beaa4f88c3.bindPopup(popup_85d579cb0048bf157d869a98811f41cb)
+        ;
+
+        
+    
+    
+            var marker_741e33053b11e0fed51ccfa2ec1e674a = L.marker(
+                [41.8781, -87.6298],
+                {}
+            ).addTo(map_fa57de34c5c48af4d9f6f910cc380d68);
+        
+    
+            var icon_c961eb903772dccde5cb08f1fd4b62af = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "blue", "prefix": "glyphicon"}
+            );
+            marker_741e33053b11e0fed51ccfa2ec1e674a.setIcon(icon_c961eb903772dccde5cb08f1fd4b62af);
+        
+    
+        var popup_807e9f38a2c293666aff96637b2466be = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_f85bfb3fd1d17553158c168bc42d25b4 = $(`<div id="html_f85bfb3fd1d17553158c168bc42d25b4" style="width: 100.0%; height: 100.0%;">May: Streeter Dr & Grand Ave</div>`)[0];
+                popup_807e9f38a2c293666aff96637b2466be.setContent(html_f85bfb3fd1d17553158c168bc42d25b4);
+            
+        
+
+        marker_741e33053b11e0fed51ccfa2ec1e674a.bindPopup(popup_807e9f38a2c293666aff96637b2466be)
+        ;
+
+        
+    
+    
+            var marker_49bd284dfa27445383f50fb2b13b21eb = L.marker(
+                [41.8781, -87.6298],
+                {}
+            ).addTo(map_fa57de34c5c48af4d9f6f910cc380d68);
+        
+    
+            var icon_b30b53a60970123cfed1742bfd8c7714 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "blue", "prefix": "glyphicon"}
+            );
+            marker_49bd284dfa27445383f50fb2b13b21eb.setIcon(icon_b30b53a60970123cfed1742bfd8c7714);
+        
+    
+        var popup_51891200efef42eb73478a579682de93 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_69898bf17a65de63b41d398120d6b772 = $(`<div id="html_69898bf17a65de63b41d398120d6b772" style="width: 100.0%; height: 100.0%;">December: Kingsbury St & Kinzie St</div>`)[0];
+                popup_51891200efef42eb73478a579682de93.setContent(html_69898bf17a65de63b41d398120d6b772);
+            
+        
+
+        marker_49bd284dfa27445383f50fb2b13b21eb.bindPopup(popup_51891200efef42eb73478a579682de93)
+        ;
+
+        
+    
+    
+            var marker_465cc4a97660602ed21a5aa38c0a4e01 = L.marker(
+                [41.8781, -87.6298],
+                {}
+            ).addTo(map_fa57de34c5c48af4d9f6f910cc380d68);
+        
+    
+            var icon_8190dea688023882f72cb7aeb4f75f26 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "blue", "prefix": "glyphicon"}
+            );
+            marker_465cc4a97660602ed21a5aa38c0a4e01.setIcon(icon_8190dea688023882f72cb7aeb4f75f26);
+        
+    
+        var popup_39a8c8891d14451e0ab8dfb78a91a7fc = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_dd3ba0eeb7cc41130bd0d9fd37f65b64 = $(`<div id="html_dd3ba0eeb7cc41130bd0d9fd37f65b64" style="width: 100.0%; height: 100.0%;">September: Streeter Dr & Grand Ave</div>`)[0];
+                popup_39a8c8891d14451e0ab8dfb78a91a7fc.setContent(html_dd3ba0eeb7cc41130bd0d9fd37f65b64);
+            
+        
+
+        marker_465cc4a97660602ed21a5aa38c0a4e01.bindPopup(popup_39a8c8891d14451e0ab8dfb78a91a7fc)
+        ;
+
+        
+    
+    
+            var marker_e86c6ecfcf9aeb9374f22fed9c58800d = L.marker(
+                [41.8781, -87.6298],
+                {}
+            ).addTo(map_fa57de34c5c48af4d9f6f910cc380d68);
+        
+    
+            var icon_4ca5b3953bb6adf64c8929cd6aa1ff8f = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "blue", "prefix": "glyphicon"}
+            );
+            marker_e86c6ecfcf9aeb9374f22fed9c58800d.setIcon(icon_4ca5b3953bb6adf64c8929cd6aa1ff8f);
+        
+    
+        var popup_28ba4a777418ba688e042f38a92e553b = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_921cdad58c88d358b4c408ea47c39128 = $(`<div id="html_921cdad58c88d358b4c408ea47c39128" style="width: 100.0%; height: 100.0%;">October: Streeter Dr & Grand Ave</div>`)[0];
+                popup_28ba4a777418ba688e042f38a92e553b.setContent(html_921cdad58c88d358b4c408ea47c39128);
+            
+        
+
+        marker_e86c6ecfcf9aeb9374f22fed9c58800d.bindPopup(popup_28ba4a777418ba688e042f38a92e553b)
+        ;
+
+        
+    
+</script>
+</html>
